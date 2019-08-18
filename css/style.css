@@ -1,4 +1,10 @@
+html,body{
+    height: 100%;
+  }
+  
+
 body{
+    height: 100%;
     font-family: Helvetica, sans-serif;
     font-size: 15px;
     line-height: 1.5;
@@ -78,11 +84,12 @@ header a:hover{
 
 .showcase {
     margin:0 auto;
-    min-width: 1200px;
-    min-height: 400px;
+    width: 100%;
+    min-height: 25rem;
     background-color: #fff;
     overflow: hidden;
     position: relative; 
+    display: flex; 
 }
 
 .showcase .imgban {

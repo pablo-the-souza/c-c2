@@ -83,7 +83,15 @@
       }, bannerTimer
       );
 
-      
+      document.getElementById("showcase").onmouseenter = function () {
+        clearInterval (startBannerLoop);
+      }
+
+      document.getElementById("showcase").onmouseleave = function () {
+        startBannerLoop = setInterval (function () {
+        bannerLoop();
+      }, bannerTimer
+      );}
 
       function bannerLoop () {
         if (bannerStatus === 1) {
