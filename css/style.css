@@ -12,10 +12,17 @@ body{
     margin: 0;
 }
 
-.container {
+.containerHeader {
     width: 80%;
     margin: auto; 
     overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 ul{
@@ -125,6 +132,8 @@ header a:hover{
 }
 /*boxes*/
 
+
+
 #boxes {
     margin-top: 20px; 
        
@@ -136,7 +145,7 @@ header a:hover{
     width: 20%;
     padding: 10px; 
     text-align: center;
-    align-self: center;
+    align-self: flex-start;
     justify-content: space-around;
     
     
@@ -144,6 +153,7 @@ header a:hover{
 
 #boxes .box img{
     width: 200px;
+    align-items:flex-start;
 }
 
 /*sidebar*/
