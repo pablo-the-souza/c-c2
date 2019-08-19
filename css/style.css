@@ -1,4 +1,4 @@
-html,body{
+html, body {
     height: 100%;
   }
   
@@ -36,6 +36,44 @@ ul{
     color: #ffffff;
     margin-top:10px;
     margin-bottom: 10px;
+}
+
+/*phone*/
+
+.phone {
+    padding: 5px;
+    flex-wrap: wrap;
+    display: flex; 
+    color: #ffffff;
+    background-color: #004c00;
+    justify-content: space-between; 
+    flex-direction: row;
+    align-items: center;
+    font-size: 1; 
+      
+}
+
+.phone a:visited {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.phone a:hover{
+    color:#000;
+    font-weight: bold; 
+}
+
+.phone a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.phone img {
+    height: 1rem; /* Set it to your liking */
+    margin-right: 3px;
+    vertical-align: middle
 }
 
 /*header*/
@@ -81,6 +119,7 @@ header .current a{
     font-weight: bold; 
 
 }
+
 
 header a:hover{
     color: #cccccc;
