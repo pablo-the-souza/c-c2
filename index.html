@@ -12,7 +12,14 @@
         <title>C&C Assessoria e Consultoria Contábil |Bem-vindos</title>
         <link rel="stylesheet" href="./css/style.css">
   
-
+      <style>
+          #map {
+            display: flex;
+            height: 250px;
+            width: 50%;
+            align-content: flex-end;
+          }
+      </style>
     </head>
     <body>
         
@@ -163,8 +170,41 @@
       } 
     </script>
 
+<script>
+    function initMap () {
+      var location = {lat: -30.0274838, lng:-51.2287301};
+      var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15,
+        center: location
+      });
+    }
+    
+  </script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDXh6FfycwxdCaHUbrCWkswSarA77kowY&callback=initMap">
+  </script>
+  
     <footer>
-      <p>C&C Assessoria e Consultoria Contabil</p>
+      <div class="footerbox">
+         <div id="contact">
+           <ul>
+              <li>C&C Assessoria e Consultoria Contabil</li>
+              <li>Avenida das Acácias 2</li>
+              <li>92501-410</li>
+              <li>Centro</li>
+              <li>Porto Alegre-RS</li>
+              <li>06191029102</li>
+
+           </ul>   
+          </div>      
+
+          <div id="map"></div>
+      </div>
+        
+        
+            
+   
+
     </footer>
     </html>          
               

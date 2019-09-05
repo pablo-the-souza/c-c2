@@ -224,13 +224,31 @@ ul#services li{
 
 /*footer*/
 
-footer{
-    padding: 20px;
-    margin-top: 20px;
+.footerbox {
+    padding: 5px;
+    flex-wrap: wrap;
+    display: flex; 
     color: #ffffff;
     background-color: #004c00;
-    text-align: center;
+    justify-content: center; 
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px; 
 }
+
+.footerbox #map {
+    padding: 10px;
+    margin: 50px; 
+}
+
+.footerbox #contact {
+    margin: 50px;
+}
+
+.footerbox li {
+    display:block;
+}
+
 
 /* Media Queries */
 @media (max-width:768px){
